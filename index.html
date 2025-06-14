@@ -1,14 +1,142 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8" />
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relap - Ut labore et dolore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sekcja ikon</title>
   <link rel="stylesheet" href="css/portal.css" />
-</head>
-<body>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Montserrat', sans-serif; }
+    header { padding: 20px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: #fff; }
+    .search-bar input { padding: 8px 12px; border: none; border-radius: 4px; }
+    .nav-links, .nav-icons { display: flex; align-items: center; }
+    .nav-links a { color: #fff; text-decoration: none; margin: 0 12px; font-weight: 600; }
+    .nav-icons i { color: #fff; font-size: 1.2rem; margin-left: 16px; cursor: pointer; }
+    .hero { background: linear-gradient(135deg, #6D5BBA, #4A90E2); color: #fff; }
+    .hero .container { display: flex; align-items: center; padding: 80px 20px; }
+    .hero-image { flex: 1; display: flex; justify-content: center; }
+    .hero-image .laptop { width: 100%; max-width: 600px; transform: rotate(-5deg); }
+    .hero-content { flex: 1; padding-left: 40px; }
+    .hero-content h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.1; }
+    .hero-content .btn { display: inline-block; padding: 14px 28px; background-color: #FFC107; color: #333; border: none; border-radius: 30px; font-weight: 600; text-decoration: none; }
+    .features { background-color: #f8f7ff; padding: 60px 20px; }
+    .features .container { display: flex; justify-content: space-between; flex-wrap: wrap; }
+    .feature { flex: 1; max-width: 25%; text-align: center; padding: 20px; }
+    .feature i { font-size: 2rem; color: #6D5BBA; margin-bottom: 12px; }
+    .feature h3 { font-size: 1.2rem; margin-bottom: 8px; color: #333; }
+    .feature p { font-size: 0.95rem; color: #666; }
+    @media (max-width: 800px) {
+      .hero .container { flex-direction: column; }
+      .hero-content { padding-left: 0; margin-top: 40px; }
+      .features .container { flex-direction: column; }
+      .feature { max-width: 100%; }
+    }
+  </style>
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 40px;
+      color: #222;
+    }
 
-  <section class="features">
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      filter: hue-rotate(260deg) saturate(0.6);
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card-content p {
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .carousel-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .carousel-buttons button {
+      background-color: #f3e7f8;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      margin: 0 8px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  </style>
+  </head>
+<body>
+<section class="features">
     <div class="feature-box">
       <img src="img/icon1.png" alt="Ikona dostawy">
       <div class="feature-box-text">
@@ -38,9 +166,218 @@
       <div class="feature-box-text">
         <h3>Nisi ut aliquip</h3>
         <p>Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">RELAP</h1>
+      <input type="search" placeholder="Search" class="search-input">
+      <nav class="nav-links">
+        <a href="#">Store</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">News</a>
+      </nav>
+      <div class="icons">
+        <img src="icons/refresh.svg"   alt="Refresh">
+        <img src="icons/techsupport.svg" alt="Support">
+        <img src="icons/shoppingbag.svg" alt="Cart">
+      </div>
+    </div>
+  </header>
+
+<!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <nav>
+        <div class="logo">RELAP</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-links">
+          <a href="#">Store</a>
+          <a href="#">Features</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">News</a>
+        </div>
+        <div class="nav-icons">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="hero">
+        <div class="hero-image">
+          <img src="macbook_PNG66.png" alt="laptop" class="laptop">
+        </div>
+        <div class="hero-content">
+          <small>MINIM VENIAM</small>
+          <h1>Ut labore et dolore</h1>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <div class="feature">
+        <i class="fas fa-truck"></i>
+        <h3>Quis nostrud</h3>
+        <p>Voluptatem quia voluptas aspernatur aut odit aut fugit.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-sync-alt"></i>
+        <h3>Exercitation</h3>
+        <p>Incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-user-shield"></i>
+        <h3>Ullamco laboris</h3>
+        <p>Nisi ut aliquid ex ea commodi consequatur.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-clipboard-list"></i>
+        <h3>Nisi ut aliquip</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
       </div>
     </div>
   </section>
 
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 40px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      filter: hue-rotate(260deg) saturate(0.6);
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card-content p {
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .carousel-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .carousel-buttons button {
+      background-color: #f3e7f8;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      margin: 0 8px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="subtitle">VELIT ESSE</div>
+      <h2>Quam nihil</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Keyboard" alt="keyboard">
+        <div class="card-content">
+          <h3>Vel illum qui dolorem eum fugiat</h3>
+          <p>June 02, 2025</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=VR+Headset" alt="vr">
+        <div class="card-content">
+          <h3>Quo voluptas nulla pariatur</h3>
+          <p>June 02, 2025</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Office+Desk" alt="office">
+        <div class="card-content">
+          <h3>At vero eos et accusamus et iusto</h3>
+          <p>June 02, 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-buttons">
+      <button>&larr;</button>
+      <button>&rarr;</button>
+    </div>
+  </div>
 </body>
 </html>
