@@ -1,180 +1,62 @@
 <!DOCTYPE html>
-<html>
-<section class="section-mollit">
-  <div class="container">
-    <h2 class="section-title">Mollit anim</h2>
-    <div class="mollit-grid">
-      
-      <!-- Left tall card -->
-      <div class="mollit-card tall">
-        <img src="https://images.pexels.com/photos/248528/pexels-photo-248528.jpeg" alt="Telefony">
-        <div class="card-content">
-          <h3>Sed ut perspiciatis</h3>
-          <p>Quis nostrum ullamco est</p>
-          <a href="#" class="btn">Shop now</a>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mollit anim</title>
+  <link rel="stylesheet" href="portal.css" />
+</head>
+<body>
 
-      <!-- Top-right -->
-      <div class="mollit-card">
-        <div class="img-wrapper landscape">
-          <img src="https://images.pexels.com/photos/4549408/pexels-photo-4549408.jpeg" alt="Złoty telefon">
-        </div>
-        <div class="card-content">
-          <h3>Totam rem aperiam</h3>
-          <span class="price">$599</span>
-        </div>
-      </div>
+  <section class="section-mollit">
+    <div class="container">
+      <h2 class="section-title">Mollit anim</h2>
+      <div class="mollit-grid">
 
-      <div class="mollit-card">
-        <div class="img-wrapper landscape">
-          <img src="https://images.pexels.com/photos/1682821/pexels-photo-1682821.jpeg" alt="Zegarek">
+        <!-- Left tall card -->
+        <div class="mollit-card tall">
+          <img src="https://images.pexels.com/photos/248528/pexels-photo-248528.jpeg" alt="Telefony">
+          <div class="card-content">
+            <h3>Sed ut perspiciatis</h3>
+            <p>Quis nostrum ullamco est</p>
+            <a href="#" class="btn">Shop now</a>
+          </div>
         </div>
-        <div class="card-content">
-          <h3>Eaque ipsa</h3>
-        </div>
-      </div>
 
-      <!-- Bottom-wide -->
-      <div class="mollit-card wide">
-        <div class="img-wrapper wide">
-          <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg" alt="Laptopy">
+        <!-- Top-right -->
+        <div class="mollit-card">
+          <div class="img-wrapper landscape">
+            <img src="https://images.pexels.com/photos/4549408/pexels-photo-4549408.jpeg" alt="Złoty telefon">
+          </div>
+          <div class="card-content">
+            <h3>Totam rem aperiam</h3>
+            <span class="price">$599</span>
+          </div>
         </div>
-        <div class="card-content">
-          <h3>Quae ab illo inventore</h3>
-          <p>Architecto beatae vitae dicta sunt</p>
-          <a href="#" class="btn">Shop now</a>
-        </div>
-      </div>
 
+        <div class="mollit-card">
+          <div class="img-wrapper landscape">
+            <img src="https://images.pexels.com/photos/1682821/pexels-photo-1682821.jpeg" alt="Zegarek">
+          </div>
+          <div class="card-content">
+            <h3>Eaque ipsa</h3>
+          </div>
+        </div>
+
+        <!-- Bottom-wide -->
+        <div class="mollit-card wide">
+          <div class="img-wrapper wide">
+            <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg" alt="Laptopy">
+          </div>
+          <div class="card-content">
+            <h3>Quae ab illo inventore</h3>
+            <p>Architecto beatae vitae dicta sunt</p>
+            <a href="#" class="btn">Shop now</a>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<style>
-  .section-mollit {
-    background-color: #fdf4ff;
-    padding: 60px 20px;
-    font-family: 'Segoe UI', sans-serif;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .section-title {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .mollit-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "card1 card2 card3"
-      "card1 card4 card4";
-    gap: 20px;
-  }
-
-  .mollit-card {
-    background: #fff;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mollit-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .img-wrapper {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-  }
-
-  .img-wrapper.landscape {
-    height: 160px;
-  }
-
-  .img-wrapper.wide {
-    height: 180px;
-  }
-
-  .tall {
-    grid-area: card1;
-  }
-
-  .mollit-grid > .mollit-card:nth-child(2) {
-    grid-area: card2;
-  }
-
-  .mollit-grid > .mollit-card:nth-child(3) {
-    grid-area: card3;
-  }
-
-  .wide {
-    grid-area: card4;
-  }
-
-  .card-content {
-    padding: 20px;
-  }
-
-  .card-content h3 {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    font-weight: 600;
-  }
-
-  .card-content p {
-    font-size: 0.95em;
-    color: #666;
-    margin-bottom: 15px;
-  }
-
-  .price {
-    font-size: 1em;
-    font-weight: bold;
-    color: #000;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 8px 18px;
-    background-color: #f1e3ff;
-    color: #6b00d7;
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 0.9em;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-
-  .btn:hover {
-    background-color: #e0ccff;
-  }
-
-  @media (max-width: 768px) {
-    .mollit-grid {
-      grid-template-areas: none;
-      grid-template-columns: 1fr;
-    }
-
-    .tall, .wide {
-      grid-area: auto;
-    }
-
-    .img-wrapper {
-      height: 180px;
-    }
-  }
-</style>
+</body>
+</html>
