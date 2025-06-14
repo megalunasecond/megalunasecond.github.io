@@ -11,9 +11,20 @@ body {
 }
 
 .site-header {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
   padding: 1rem 0;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+.site-header .logo,
+.site-header .nav-links a {
+  color: #fff;
+}
+.site-header .icons img {
+  filter: brightness(0) invert(1);
 }
 .header-inner {
   display: flex;
@@ -25,12 +36,12 @@ body {
   font-weight: 700;
 }
 .search-input {
-  flex: 1;
-  max-width: 300px;
-  margin: 0 1rem;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+}
+.search-input::placeholder {
+  color: rgba(255,255,255,0.7);
 }
 .nav-links a {
   margin: 0 0.75rem;
@@ -47,8 +58,9 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #7b4ff3, #ac3ffc);
-  padding: 4rem 0;
+  position: relative;
+  background: linear-gradient(to right, #7b4ff3 0%, #ac3ffc 100%);
+  padding: 6rem 0 4rem;
   color: #fff;
 }
 .hero-inner {
@@ -57,12 +69,12 @@ body {
   justify-content: center;
   gap: 4rem;
 }
-.hero-image {
-  max-width: 40%;
+.hero-image  {
+  max-width: 40%; 
 }
 .hero-content {
-  max-width: 40%;
-  text-align: right;
+  max-width: 40%; 
+  text-align: right; 
 }
 .hero-content small {
   display: block;
