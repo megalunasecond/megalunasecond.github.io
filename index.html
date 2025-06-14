@@ -75,5 +75,139 @@
 </section>
 
 
+=======
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Quam nihil</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 40px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      filter: hue-rotate(260deg) saturate(0.6);
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card-content p {
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .carousel-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .carousel-buttons button {
+      background-color: #f3e7f8;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      margin: 0 8px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="subtitle">VELIT ESSE</div>
+      <h2>Quam nihil</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Keyboard" alt="keyboard">
+        <div class="card-content">
+          <h3>Vel illum qui dolorem eum fugiat</h3>
+          <p>June 02, 2025</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=VR+Headset" alt="vr">
+        <div class="card-content">
+          <h3>Quo voluptas nulla pariatur</h3>
+          <p>June 02, 2025</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Office+Desk" alt="office">
+        <div class="card-content">
+          <h3>At vero eos et accusamus et iusto</h3>
+          <p>June 02, 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-buttons">
+      <button>&larr;</button>
+      <button>&rarr;</button>
+    </div>
+  </div>
 </body>
 </html>
