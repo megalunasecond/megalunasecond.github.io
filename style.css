@@ -121,9 +121,14 @@ body {
   font-size: 0.9rem;
   color: #666;
 }
+.feature-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
 .feature-icon {
-  width: 48px;
-  height: 48px;
-  display: block;
-  margin: 0 auto 1rem;
+  width: 32px;
+  height: 32px;
+  margin: 0;
 }
